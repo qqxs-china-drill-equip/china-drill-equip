@@ -3,60 +3,377 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>China Drill Equipment Export | Drilling Tools & Parts</title>
+    <title>China Drilling Equipment & Tools Export - Professional Drill Pipe, Drill Bit, Thread Protector Supplier</title>
+    <meta name="description" content="Reliable China supplier of high-quality drilling equipment: drill pipes, PDC/tricone drill bits, thread protectors for oil, gas, and rock drilling projects worldwide.">
+    <meta name="keywords" content="drill pipe, drill bit, thread protector, drilling equipment, oil drilling tools, China drilling export">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-        body { background: #f5f5f5; color: #333; }
-        header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
-        .container { max-width: 1200px; margin: 20px auto; padding: 0 20px; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0; }
-        .product-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        .product-card h3 { color: #2c3e50; margin-bottom: 10px; }
-        .product-card p { line-height: 1.6; margin-bottom: 15px; }
-        .btn { display: inline-block; background: #27ae60; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; }
-        .contact-form { background: white; padding: 30px; border-radius: 8px; margin: 30px 0; }
-        .contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; }
-        footer { background: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #0f3443;
+            color: white;
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .navbar h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .navbar p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .banner {
+            background: linear-gradient(rgba(15, 52, 67, 0.85), rgba(15, 52, 67, 0.85)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 5rem 5%;
+        }
+        .banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .banner p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        .products {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: #0f3443;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-content {
+            padding: 1.5rem;
+        }
+        .product-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: #0f3443;
+        }
+        .product-content p {
+            color: #666;
+            margin-bottom: 1.2rem;
+            line-height: 1.5;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #25a151;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #1e8643;
+        }
+
+        .about {
+            background-color: #f0f4f5;
+            padding: 4rem 5%;
+        }
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #0f3443;
+        }
+        .about-text p {
+            color: #555;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        .certifications {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        .cert-badge {
+            background: white;
+            padding: 0.8rem 1.2rem;
+            border-radius: 5px;
+            font-weight: 600;
+            color: #0f3443;
+            border: 1px solid #ddd;
+        }
+        .about-img {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .contact {
+            padding: 4rem 5%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        .contact-form h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #0f3443;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background-color: #25a151;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background-color: #1e8643;
+        }
+
+        footer {
+            background-color: #0f3443;
+            color: white;
+            text-align: center;
+            padding: 2rem 5%;
+        }
+        footer p {
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+        .contact-info {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+        .contact-info a:hover {
+            opacity: 1;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .banner h2 {
+                font-size: 1.8rem;
+            }
+            .about-container {
+                grid-template-columns: 1fr;
+            }
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 25px;
+            }
+        }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
-        <h1>China Drilling Equipment & Tools Export</h1>
-        <p>Professional Drilling Tools, Drill Pipes, Thread Protectors & More</p >
-    </header>
+    <nav class="navbar">
+        <h1>China Drilling Equipment Export</h1>
+        <p>Professional Supplier of Drill Pipes, Drill Bits & Thread Protectors</p >
+    </nav>
 
-    <div class="container">
-        <section class="product-grid">
-            <div class="product-card">
-                <h3>Drill Pipe</h3>
-                <p>High-strength drill pipe for oil & gas drilling, available in various sizes and grades.</p >
-                Inquire Now
-            </div>
-            <div class="product-card">
-                <h3>Drill Bit</h3>
-                <p>Durable PDC & tricone drill bits for efficient rock drilling in different formations.</p >
-                Inquire Now
-            </div>
-            <div class="product-card">
-                <h3>Thread Protector</h3>
-                <p>Protective caps for drill pipe threads, prevent damage during transportation and storage.</p >
-                Inquire Now
-            </div>
-        </section>
+    <section class="banner">
+        <h2>China Drilling Equipment & Tools Export</h2>
+        <p>Professional Drilling Tools, Drill Pipes, Thread Protectors & More for Global Oil, Gas & Rock Drilling Projects</p >
+    </section>
 
-        <section class="contact-form">
-            <h2>Contact Us for Inquiry</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message (Product, Quantity, etc.)" rows="5" required></textarea>
-                <button type="submit" class="btn">Send Inquiry</button>
+    <section class="products">
+        <h2 class="section-title">Our Core Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                < img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Drill Pipe" class="product-img">
+                <div class="product-content">
+                    <h3>Drill Pipe</h3>
+                    <p>High-strength drill pipe for oil & gas drilling, available in various sizes and grades (API 5DP, G105/S135). Custom specifications supported.</p >
+                    Inquire Now
+                </div>
+            </div>
+            <div class="product-card">
+                < img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Drill Bit" class="product-img">
+                <div class="product-content">
+                    <h3>Drill Bit</h3>
+                    <p>Durable PDC & tricone drill bits for efficient rock drilling in different formations. Long service life, high penetration rate.</p >
+                    Inquire Now
+                </div>
+            </div>
+            <div class="product-card">
+                < img src="https://images.unsplash.com/photo-1590874103328-6acf3d32130d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Thread Protector" class="product-img">
+                <div class="product-content">
+                    <h3>Thread Protector</h3>
+                    <p>Protective caps for drill pipe threads, prevent damage during transportation and storage. Plastic & steel material options available.</p >
+                    Inquire Now
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h3>About Our Company</h3>
+                <p>We are a leading manufacturer and exporter of drilling equipment, with years of experience serving global clients in oil, gas, mining, and water well drilling.</p >
+                <p>Our products meet strict API standards, with full quality control from raw material to finished goods. We offer competitive prices, fast delivery, and customized solutions.</p >
+                <div class="certifications">
+                    <div class="cert-badge">API Certified</div>
+                    <div class="cert-badge">ISO 9001</div>
+                    <div class="cert-badge">CE Approved</div>
+                </div>
+            </div>
+            <div class="about-img">
+                < img src="https://images.unsplash.com/photo-1565034946484-95d734637799?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Drilling Equipment Factory">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-form">
+            <h3>Contact Us for Inquiry</h3>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message (Product, Quantity, etc.)</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Inquiry</button>
             </form>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <footer>
+        <div class="contact-info">
+            
+            📞 +86 177 0926 9768
+            
+        </div>
         <p>&copy; 2026 China Drill Equipment Export. All rights reserved.</p >
     </footer>
+
+    <a href="https://wa.me/85254135170" class="whatsapp-float" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a >
 </body>
 </html>
